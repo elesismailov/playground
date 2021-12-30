@@ -48,14 +48,24 @@ main {
 }
 #dropdown1 ul {
   position: absolute;
-  top: 104%;
+  top: 106%;
   left: 0;
   display: flex;
   flex-flow: nowrap column;
   display: none;
+  animation: dropdown1 250ms ease;
 }
 #dropdown1 > button[aria-expanded=true] ~ ul {
   display: block;
+}
+
+@keyframes dropdown1 {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(0);
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
