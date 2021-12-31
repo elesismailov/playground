@@ -54,17 +54,18 @@ main {
   flex-flow: nowrap column;
   display: none;
   animation: dropdown1 250ms ease;
+  overflow: hidden;
 }
 #dropdown1 > button[aria-expanded=true] ~ ul {
-  display: block;
+  display: flex;
 }
 
 @keyframes dropdown1 {
   0% {
-    transform: translateY(-100%);
+    clip-path: inset(0 0 100% 0);
   }
   100% {
-    transform: translateY(0);
+    clip-path: inset(0 0 0% 0);
   }
 }
 
