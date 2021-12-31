@@ -56,7 +56,7 @@ main {
         // gap: .1rem;
         display: none;
 
-        animation: dropdown1 250ms ease;  
+        animation: dropdown1 150ms ease-in-out; 
         overflow: hidden;  
     }
     > button[aria-expanded='true'] ~ ul{

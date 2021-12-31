@@ -53,7 +53,7 @@ main {
   display: flex;
   flex-flow: nowrap column;
   display: none;
-  animation: dropdown1 250ms ease;
+  animation: dropdown1 150ms ease-in-out;
   overflow: hidden;
 }
 #dropdown1 > button[aria-expanded=true] ~ ul {
